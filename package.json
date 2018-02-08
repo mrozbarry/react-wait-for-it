@@ -1,0 +1,36 @@
+{
+  "name": "react-wait-for-it",
+  "version": "0.0.1",
+  "description": "A promise-ful component that waits to load something",
+  "main": "src/index.js",
+  "author": "Alex Barry",
+  "license": "MIT",
+  "private": false,
+  "repository": "https://github.com/mrozbarry/react-wait-for-it",
+  "dependencies": {
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "@ava/babel-preset-stage-4": "^1.1.0",
+    "@babel/core": "^7.0.0-beta.39",
+    "@babel/preset-env": "^7.0.0-beta.39",
+    "@babel/preset-react": "^7.0.0-beta.39",
+    "@babel/preset-stage-2": "^7.0.0-beta.39",
+    "@babel/register": "^7.0.0-beta.39",
+    "ava": "^1.0.0-beta.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jsdom": "^11.6.2",
+    "jsdom-global": "^3.0.2"
+  },
+  "scripts": {
+    "test": "ava --no-cache src/**/*.test.js"
+  },
+  "ava": {
+    "require": [
+      "@babel/register"
+    ]
+  }
+}
