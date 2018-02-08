@@ -23,6 +23,14 @@ const MyApp = (props) => (
 )
 ```
 
+## Play with it
+
+```
+yarn start
+```
+
+[localhost:8080](http://localhost:8080)
+
 ## Test it
 
 ```

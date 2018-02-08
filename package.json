@@ -1,6 +1,6 @@
 {
   "name": "react-wait-for-it",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A promise-ful component that waits to load something",
   "main": "src/index.js",
   "author": "Alex Barry",
@@ -10,7 +10,8 @@
   "dependencies": {
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "webpack": "^3.10.0"
   },
   "devDependencies": {
     "@ava/babel-preset-stage-4": "^1.1.0",
@@ -20,13 +21,16 @@
     "@babel/preset-stage-2": "^7.0.0-beta.39",
     "@babel/register": "^7.0.0-beta.39",
     "ava": "^1.0.0-beta.1",
+    "babel-loader": "^8.0.0-beta.0",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "jsdom": "^11.6.2",
-    "jsdom-global": "^3.0.2"
+    "jsdom-global": "^3.0.2",
+    "webpack-dev-server": "^2.11.1"
   },
   "scripts": {
-    "test": "ava --no-cache src/**/*.test.js"
+    "test": "ava --no-cache src/**/*.test.js",
+    "start": "webpack-dev-server --config ./webpack.demo.js"
   },
   "ava": {
     "require": [
