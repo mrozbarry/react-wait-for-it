@@ -1,6 +1,6 @@
 {
   "name": "react-wait-for-it",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A promise-ful component that waits to load something",
   "main": "src/index.js",
   "author": "Alex Barry",
